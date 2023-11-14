@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="overlay">
+        <div class="editWindow">
+            <span id="close">x</span>
+             <label for="Minutes">Minutes</label>
+            <input name="Minutes" type="number" class="TaskTime"/>
+            <button type="submit" id="submit">Start</button>
+        </div>
+    </div>
+    <h1>Countdown</h1>
+    <div class="container">
+    <div class="time">
+        <span class="minutes">00</span>
+        <span class="colums">:</span>
+        <span class="seconds">00</span>
+    </div>
+    <div class="control_buttons">
+        <button id="set_button">set</button>
+        <button disabled id="stop_button">stop</button>
+        <button id="start_button">start</button>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

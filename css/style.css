@@ -1,0 +1,82 @@
+* {
+  -webkit-box-sixing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3f9ff;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  background-color: rgb(176, 167, 167);
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.time {
+  font-size: 50px;
+}
+.control_buttons button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: #03a9f4;
+  border: none;
+  cursor: pointer;
+}
+.control_buttons button:hover {
+  opacity: 0.5;
+}
+.control_buttons button:nth-child(2) {
+  background-color: red;
+}
+.control_buttons button:last-child {
+  display: none;
+  background-color: #8bc34a;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.77);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 1;
+}
+#overlay.show {
+  display: flex;
+}
+#overlay .editWindow {
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#overlay .editWindow span {
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
